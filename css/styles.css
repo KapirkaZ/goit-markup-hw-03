@@ -422,8 +422,8 @@ img {
   list-style: none;
 }
 
-.portfolio-list .item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+.portfol .item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -440,6 +440,6 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-list .item:nth-child(3n) {
+.portfolio-nav .item:nth-child(3n) {
   margin-right: 0;
 }
