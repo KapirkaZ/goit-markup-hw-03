@@ -41,10 +41,18 @@ ul {
   padding-right: 15;
 }
 
+.flexbox {
+  display: flex;
+}
 /* Page header */
 
 .page-header {
   background-color: #fff;
+}
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* Main nav */
@@ -52,6 +60,7 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 /* Logo */
@@ -70,10 +79,22 @@ ul {
   color: var(--accent-color);
 }
 
+.logo {
+  margin-right: 93px;
+}
+
 button {
   font-family: inherit;
 }
 /* навигация по сайту */
+
+.site-nav {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -160,6 +181,11 @@ button {
   color: var(--accent-color);
 }
 
+.team {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -189,6 +215,16 @@ button {
   letter-spacing: 0.03em;
 }
 
+.content-box .work-photo {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.our-work {
+  margin-bottom: 50px;
+}
+.content-box .work-photo:not(:last-child) {
+  margin-right: 30px;
+}
 /* Features */
 
 .feature-list .title {

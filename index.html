@@ -21,7 +21,7 @@
   <body class="page">
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container">
+      <div class="container flexbox">
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             ><span class="logo-header">Web</span>Studio</a
@@ -63,7 +63,7 @@
     </div>
 
     <!--Преимущества-->
-    <section class="section">
+    <section class="section feature">
       <div class="container">
         <h2 class="section-title">Особенности</h2>
 
@@ -101,25 +101,25 @@
     </section>
 
     <!--Работники-->
-    <section class="section">
+    <section class="section work">
       <div class="container">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+        <h2 class="section-title our-work">Чем мы занимаемся</h2>
+        <ul class="flexbox content-box">
+          <li class="work-photo">
             <img
               src="./images/box1.jpg"
               alt="Человек за ноутбуком"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-photo">
             <img
               src="./images/box2.jpg"
               alt="Человек с мобильным приложением"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-photo">
             <img
               src="./images/box3.jpg"
               alt="Человек с планшетом"
@@ -163,23 +163,27 @@
 
     <!-- Футер -->
     <footer class="page-footer">
-      <a class="link footer-logo" href="./index.html"
-        ><span class="logo-header">Web</span>Studio</a
-      >
-      <section>
-        <h2>External links</h2>
-        <address class="footer-address">
-          <p class="adres">г. Киев, пр-т Леси Украинки, 26</p>
+      <section class="section footer">
+        <div class="container">
+          <a class="link footer-logo" href="./index.html"
+            ><span class="logo-header">Web</span>Studio</a
+          >
+          <h2 class="section-title">External links</h2>
+          <address class="footer-address">
+            <p class="adres">г. Киев, пр-т Леси Украинки, 26</p>
 
-          <ul class="adres-nav list">
-            <li>
-              <a href="info@devstudio.com" class="link">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+38-096-111-11-11" class="link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+            <ul class="adres-nav list">
+              <li>
+                <a href="info@devstudio.com" class="link">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:+38-096-111-11-11" class="link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </section>
     </footer>
   </body>
