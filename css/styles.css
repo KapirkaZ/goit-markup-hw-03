@@ -443,3 +443,19 @@ img {
 .portfolio-nav .item:nth-child(3n) {
   margin-right: 0;
 }
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfolio-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
