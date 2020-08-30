@@ -21,6 +21,12 @@ ul {
   list-style: none;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 /* цвет основного текста #000 */
 
 /* вторичный цвет текста #757575 */
@@ -35,10 +41,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
-  margin-bottom: 94;
-  padding-left: 15;
-  padding-right: 15;
+  /* outline: 2px solid tomato; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .flexbox {
@@ -155,6 +160,8 @@ button {
 .hero {
   text-align: center;
   background-color: var(--footer-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -207,6 +214,13 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .work {
   font-style: normal;
   font-weight: normal;
@@ -216,12 +230,10 @@ button {
 }
 
 .content-box .work-photo {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
 }
 
-.feature-list .title {
-  flex-basis: calc((100% - 2 * 30px) / 4);
-}
 .our-work {
   margin-bottom: 50px;
 }
@@ -239,8 +251,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-top: 0;
-  margin-bottom: 10;
+  /* margin-top: 0;
+  margin-bottom: 10; */
 }
 
 .feature-list .link {
@@ -251,6 +263,20 @@ button {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.section .feature {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.feature-list .item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.feature-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* Кнопка */
@@ -286,6 +312,10 @@ button {
 
 /* Наша команда */
 
+.section.team {
+  text-align: center;
+}
+
 .team {
   background-color: var(--button-bg-color);
 }
@@ -297,8 +327,17 @@ button {
 }
 
 /* Фуутер */
+
+.footer-contacts .link {
+  display: inline-block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .page-footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
