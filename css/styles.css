@@ -219,6 +219,9 @@ button {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
+.feature-list .title {
+  flex-basis: calc((100% - 2 * 30px) / 4);
+}
 .our-work {
   margin-bottom: 50px;
 }
@@ -325,4 +328,8 @@ button {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+}
+
+.hidden {
+  display: none;
 }
