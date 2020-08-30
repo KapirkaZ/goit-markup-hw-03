@@ -17,138 +17,203 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="page">
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="logo-header">Web</span>Studio</a
-        >
+    <header class="page-header">
+      <div class="container flexbox">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo"
+            ><span class="logo-header">Web</span>Studio</a
+          >
 
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="site-info list">
+          <li class="item">
+            <a href="info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+38-096-111-11-11" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-
-      <ul class="site-info list">
-        <li>
-          <a href="info@devstudio.com" class="link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+38-096-111-11-11" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!--Портфолио-->
     <section class="section">
-      <h1 class="section-title">Фильтр портфолио</h1>
+      <div class="container">
+        <h1 class="section-title hidden">Фильтр портфолио</h1>
 
-      <div>
-        <button type="button" class="button link">Все</button>
-        <button type="button" class="button link">Веб-сайты</button>
-        <button type="button" class="button link">Приложения</button>
-        <button type="button" class="button link">Дизайн</button>
-        <button type="button" class="button link">Маркетинг</button>
+        <!-- Кнопки -->
+
+        <ul class="list portfolio-nav">
+          <li class="item">
+            <button type="button" class="button link">Все</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button link">Веб-сайты</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button link">Приложения</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button link">Дизайн</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button link">Маркетинг</button>
+          </li>
+        </ul>
+
+        <h2 class="section-title hidden">Портфолио</h2>
+
+        <ul class="flexbox portfol">
+          <li class="item">
+            <div>
+              <img
+                src="./images/technocrack.jpg"
+                alt="Изображение сайта"
+                width="370"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Технокряк</h3>
+              <p>Веб-сайт</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img
+                src="./images/PosterNewOrlean.jpg"
+                alt="Игроки в баскетбол"
+                width="370"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Постер New Orlean vs Golden Star</h3>
+              <p>Дизайн</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img
+                src="./images/RestoranSeaFood.jpg"
+                alt="Логотип ресторана"
+                width="370"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Ресторан Seafood</h3>
+              <p>Приложение</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img src="./images/ProjectPrime.jpg" alt="Наушники" width="370" />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Проект Prime</h3>
+              <p class="work">Маркетинг</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img src="./images/ProjectBoxes.jpg" alt="Коробки" width="370" />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Проект Boxes</h3>
+              <p class="work">Приложение</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img
+                src="./images/IspirationHasNoBorders.jpg"
+                alt="Монитор"
+                width="370"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Inspiration has no Borders</h3>
+              <p class="work">Веб-сайт</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img src="./images/LimitedEdition.jpg" alt="Журнал" width="370" />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Издание Limited Edition</h3>
+              <p class="work">Дизайн</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img src="./images/ProjectLAB.jpg" alt="Ярлык" width="370" />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Проект LAB</h3>
+              <p class="work">Маркетинг</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div>
+              <img
+                src="./images/GrowingBusiness.jpg"
+                alt="Человек за ноутбуком"
+                width="370"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="section-links">Growing Business</h3>
+              <p class="work">Приложение</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <h2 class="section-title">Портфолио</h2>
-      <ul>
-        <li>
-          <img
-            src="./images/technocrack.jpg"
-            alt="Изображение сайта"
-            width="370"
-          />
-          <h3 class="section-links">Технокряк</h3>
-          <p>Веб-сайт</p>
-        </li>
-
-        <li>
-          <img
-            src="./images/PosterNewOrlean.jpg"
-            alt="Игроки в баскетбол"
-            width="370"
-          />
-          <h3 class="section-links">Постер New Orlean vs Golden Star</h3>
-          <p>Дизайн</p>
-        </li>
-
-        <li>
-          <img
-            src="./images/RestoranSeaFood.jpg"
-            alt="Логотип ресторана"
-            width="370"
-          />
-          <h3 class="section-links">Ресторан Seafood</h3>
-          <p>Приложение</p>
-        </li>
-
-        <li>
-          <img src="./images/ProjectPrime.jpg" alt="Наушники" width="370" />
-          <h3 class="section-links">Проект Prime</h3>
-          <p class="work">Маркетинг</p>
-        </li>
-
-        <li>
-          <img src="./images/ProjectBoxes.jpg" alt="Коробки" width="370" />
-          <h3 class="section-links">Проект Boxes</h3>
-          <p class="work">Приложение</p>
-        </li>
-
-        <li>
-          <img
-            src="./images/IspirationHasNoBorders.jpg"
-            alt="Монитор"
-            width="370"
-          />
-          <h3 class="section-links">Inspiration has no Borders</h3>
-          <p class="work">Веб-сайт</p>
-        </li>
-
-        <li>
-          <img src="./images/LimitedEdition.jpg" alt="Журнал" width="370" />
-          <h3 class="section-links">Издание Limited Edition</h3>
-          <p class="work">Дизайн</p>
-        </li>
-
-        <li>
-          <img src="./images/ProjectLAB.jpg" alt="Ярлык" width="370" />
-          <h3 class="section-links">Проект LAB</h3>
-          <p class="work">Маркетинг</p>
-        </li>
-
-        <li>
-          <img
-            src="./images/GrowingBusiness.jpg"
-            alt="Человек за ноутбуком"
-            width="370"
-          />
-          <h3 class="section-links">Growing Business</h3>
-          <p class="work">Приложение</p>
-        </li>
-      </ul>
     </section>
 
     <!-- Футер -->
     <footer class="page-footer">
-      <a class="link footer-logo" href="./index.html"
-        ><span class="logo-header">Web</span>Studio</a
-      >
-      <section>
-        <h2>External links</h2>
-        <address class="footer-address">
-          <p class="adres">г. Киев, пр-т Леси Украинки, 26</p>
+      <section class="section footer">
+        <div class="container">
+          <div class="footer-info">
+            <a class="link footer-logo" href="./index.html"
+              ><span class="logo-header">Web</span>Studio</a
+            >
+            <h2 class="section-title hidden">External links</h2>
+            <address class="footer-address">
+              <p class="adres">г. Киев, пр-т Леси Украинки, 26</p>
 
-          <ul class="adres-nav list">
-            <li>
-              <a href="info@devstudio.com" class="link">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+38-096-111-11-11" class="link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+              <ul class="adres-nav list">
+                <li class="item">
+                  <a href="info@devstudio.com" class="link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:+38-096-111-11-11" class="link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
       </section>
     </footer>
   </body>
