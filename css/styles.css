@@ -47,8 +47,8 @@ ul {
 }
 
 .container .main-nav {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .flexbox {
   display: flex;
@@ -233,8 +233,8 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 
-  padding-top: 93px;
-  padding-bottom: 94px;
+  /* padding-top: 93px; */
+  /* padding-bottom: 94px; */
 }
 
 .content-box .work-photo {
@@ -272,7 +272,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section .feature {
+.section.feature {
   padding-top: 94px;
   padding-bottom: 0;
 }
@@ -284,6 +284,10 @@ img {
 .feature-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Кнопка */
@@ -411,6 +415,10 @@ img {
   margin-bottom: 50px;
 }
 
+.buttoms {
+  margin-bottom: 50px;
+}
+
 .portfol {
   display: flex;
   flex-wrap: wrap;
@@ -423,7 +431,7 @@ img {
 }
 
 .portfol .item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -440,14 +448,8 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-nav .item:nth-child(3n) {
+.portfol .item:nth-child(3n) {
   margin-right: 0;
-}
-
-.portfolio-nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 .list {
@@ -458,4 +460,20 @@ img {
 
 .portfolio-nav .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfol .text {
+  margin: 0;
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfol .section-links {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--button-color-secondary);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
