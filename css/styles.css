@@ -187,9 +187,9 @@ button {
 
 /* подсветка синим при наведении */
 .site-nav .link:hover,
-.site-nav link:focus,
+.site-nav .link:focus,
 .site-info .link:hover,
-.site-info link:focus {
+.site-info .link:focus {
   color: var(--accent-color);
 }
 
