@@ -415,9 +415,14 @@ img {
   margin-bottom: 50px;
 }
 
-/* .buttoms {
+.buttoms {
   margin-bottom: 50px;
-} */
+}
+
+.section.buttoms {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .portfol {
   display: flex;
